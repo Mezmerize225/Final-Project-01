@@ -1,1 +1,5 @@
-<p>products works!</p>
+<div>
+    @for(product of products; track product.id) {
+        <app-product-card [product]="product" (cardClick)="onCardClick(product.id)"></app-product-card>
+    }
+</div>
