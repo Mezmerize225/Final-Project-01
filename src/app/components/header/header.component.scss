@@ -2,7 +2,7 @@ header {
     all: unset;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 80px 10px 80px;
 
     div ul {
         all: unset;
@@ -45,6 +45,7 @@ header {
         height: 32px;
         border-radius: 8px;
         border: 1px solid #E5E7EB;
+        margin-right: 20px;
     }
 
     .input-decor {
@@ -65,6 +66,13 @@ header {
         height: 20px;
         border-radius: 9999px;
         position: absolute;
+        top: -5px;
+        right: 0px;
+        color: #ffffff;
+    }
+
+    .avatar-decor {
+        padding-left: 20px;
     }
 
 }
