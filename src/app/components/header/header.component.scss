@@ -16,6 +16,14 @@ header {
 
     .shophub-decor {
         display: flex;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        // &.active {
+        //     color: #2563EB;
+        // }
     }
 
     .bg-color {

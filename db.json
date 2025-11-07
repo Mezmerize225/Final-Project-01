@@ -1,6 +1,18 @@
 {
   "products": [
-    { "id": "1", "title": "a title", "views": 100, "image": "headphones" },
-    { "id": "2", "title": "another title", "views": 200, "image": "headphones" }
+    { "id": "1", "title": "a title", "rate": 100, "totalRate": 124, "price": 66, "discountPercent": 33, "image": "headphones" },
+    { "id": "2", "title": "another title", "rate": 20, "totalRate": 120, "price": 25, "image": "headphones" },
+    { "id": "3", "title": "title 3", "rate": 50, "totalRate": 67, "price": 76, "discountPercent": 30, "image": "headphones" },
+    { "id": "4", "title": "title 4", "rate": 29, "totalRate": 53, "price": 45, "image": "headphones" },
+    { "id": "5", "title": "title 5", "rate": 100, "totalRate": 124, "price": 66, "discountPercent": 33, "image": "headphones" },
+    { "id": "6", "title": "title 6", "rate": 20, "totalRate": 120, "price": 25, "image": "headphones" },
+    { "id": "7", "title": "title 7", "rate": 50, "totalRate": 67, "price": 76, "discountPercent": 30, "image": "headphones" },
+    { "id": "8", "title": "title 8", "rate": 29, "totalRate": 53, "price": 45, "image": "headphones" },
+    { "id": "9", "title": "title 9", "rate": 100, "totalRate": 124, "price": 66, "discountPercent": 33, "image": "headphones" },
+    { "id": "10", "title": "title 10", "rate": 20, "totalRate": 120, "price": 25, "image": "headphones" },
+    { "id": "11", "title": "title 11", "rate": 50, "totalRate": 67, "price": 76, "discountPercent": 30, "image": "headphones" },
+    { "id": "12", "title": "title 12", "rate": 29, "totalRate": 53, "price": 45, "image": "headphones" }
+  
+  
   ]
 }

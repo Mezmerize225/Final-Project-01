@@ -1,5 +1,13 @@
-<div>
-    @for(product of products; track product.id) {
-        <app-product-card [product]="product" (cardClick)="onCardClick(product.id)"></app-product-card>
-    }
+<div class="products-decor">
+    <h3>
+        All Products
+    </h3>
+    <h5>
+        Showing 1-6 of 100 results
+    </h5>
+    <div class="product-card-decor">
+        @for(product of products; track product.id) {
+            <app-product-card [product]="product" (cardClick)="onCardClick(product.id)"></app-product-card>
+        }
+    </div>
 </div>

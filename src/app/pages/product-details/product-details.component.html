@@ -1,3 +1,10 @@
 <div>
     product id is {{ productId }}
+    {{ product.title }}
+</div>
+
+<div>
+    @if(product) {
+        {{ product.title }}
+    }
 </div>
