@@ -5,4 +5,8 @@ button {
     border-radius: 8px;
     border: none;
     color: #ffffff;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

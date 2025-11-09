@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AddToCartComponent {
 
+  public addItem = 0;
+
+  addToCart() {
+    console.log(this.addItem, 'item added to shopping cart');
+
+    // push ;
+    return (this.addItem +1) ;
+  }
+  
+
 }

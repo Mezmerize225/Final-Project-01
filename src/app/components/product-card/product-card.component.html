@@ -1,4 +1,6 @@
-<div (click)="cardClick.emit()">
+<div >
+
+    <div (click)="cardClick.emit()">
     
     
     <!-- <img src="../../../assets/images/{{product().image}}.png" alt="headphone-image" width="200px"> -->
@@ -21,6 +23,8 @@
         {{ product().price | currency: 'USD' }}
     }
     <br>
+
+    </div>
     
     <app-add-to-cart></app-add-to-cart>
 
