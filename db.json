@@ -2,6 +2,7 @@
   "products": [
     
    
+  
   {
     "id": "1",
     "title": "Wireless Bluetooth Headphones",
@@ -91,9 +92,277 @@
     "price": 29.99,
     "discountPercent": 15,
     "image": "https://picsum.photos/seed/charger/200/200"
+  },
+  {
+    "id": "11",
+    "title": "Bluetooth Speaker Waterproof",
+    "rate": 4.6,
+    "totalRate": 412,
+    "price": 54.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/speaker/200/200"
+  },
+  {
+    "id": "12",
+    "title": "Portable Power Bank 20000mAh",
+    "rate": 4.4,
+    "totalRate": 520,
+    "price": 39.5,
+    "discountPercent": 20,
+    "image": "https://picsum.photos/seed/powerbank/200/200"
+  },
+  {
+    "id": "13",
+    "title": "Smartphone Tripod with Remote",
+    "rate": 4.3,
+    "totalRate": 170,
+    "price": 24.99,
+    "discountPercent": 15,
+    "image": "https://picsum.photos/seed/tripod/200/200"
+  },
+  {
+    "id": "14",
+    "title": "1080p Dash Cam with Night Vision",
+    "rate": 4.6,
+    "totalRate": 260,
+    "price": 74.99,
+    "discountPercent": 18,
+    "image": "https://picsum.photos/seed/dashcam/200/200"
+  },
+  {
+    "id": "15",
+    "title": "Smart Light Bulb RGB Wi-Fi",
+    "rate": 4.4,
+    "totalRate": 312,
+    "price": 19.99,
+    "discountPercent": 25,
+    "image": "https://picsum.photos/seed/lightbulb/200/200"
+  },
+  {
+    "id": "16",
+    "title": "VR Headset with Adjustable Lens",
+    "rate": 4.3,
+    "totalRate": 205,
+    "price": 59.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/vr/200/200"
+  },
+  {
+    "id": "17",
+    "title": "Smart Plug with Alexa Support",
+    "rate": 4.6,
+    "totalRate": 490,
+    "price": 22.99,
+    "discountPercent": 15,
+    "image": "https://picsum.photos/seed/plug/200/200"
+  },
+  {
+    "id": "18",
+    "title": "External Hard Drive 2TB",
+    "rate": 4.7,
+    "totalRate": 350,
+    "price": 99.99,
+    "discountPercent": 20,
+    "image": "https://picsum.photos/seed/harddrive/200/200"
+  },
+  {
+    "id": "19",
+    "title": "Wireless Car Charger Mount",
+    "rate": 4.5,
+    "totalRate": 265,
+    "price": 34.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/carcharger/200/200"
+  },
+  {
+    "id": "20",
+    "title": "Smart Thermostat Wi-Fi Enabled",
+    "rate": 4.8,
+    "totalRate": 145,
+    "price": 189.99,
+    "discountPercent": 12,
+    "image": "https://picsum.photos/seed/thermostat/200/200"
+  },
+    {
+    "id": "21",
+    "title": "Wireless Game Controller for PC and Console",
+    "rate": 4.5,
+    "totalRate": 330,
+    "price": 59.99,
+    "discountPercent": 15,
+    "image": "https://picsum.photos/seed/controller/200/200"
+  },
+  {
+    "id": "22",
+    "title": "Smart Doorbell Camera 1080p",
+    "rate": 4.6,
+    "totalRate": 240,
+    "price": 129.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/doorbell/200/200"
+  },
+  {
+    "id": "23",
+    "title": "Compact Bluetooth Soundbar",
+    "rate": 4.4,
+    "totalRate": 415,
+    "price": 119.99,
+    "discountPercent": 20,
+    "image": "https://picsum.photos/seed/soundbar/200/200"
+  },
+  {
+    "id": "24",
+    "title": "Wi-Fi Range Extender 1200Mbps",
+    "rate": 4.2,
+    "totalRate": 390,
+    "price": 49.99,
+    "discountPercent": 15,
+    "image": "https://picsum.photos/seed/extender/200/200"
+  },
+  {
+    "id": "25",
+    "title": "Smartphone Gimbal Stabilizer",
+    "rate": 4.5,
+    "totalRate": 340,
+    "price": 89.99,
+    "discountPercent": 18,
+    "image": "https://picsum.photos/seed/gimbal/200/200"
+  },
+  {
+    "id": "26",
+    "title": "Smart Alarm Clock with Wireless Charging",
+    "rate": 4.3,
+    "totalRate": 280,
+    "price": 59.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/alarmclock/200/200"
+  },
+  {
+    "id": "27",
+    "title": "Streaming Media Player 4K",
+    "rate": 4.7,
+    "totalRate": 460,
+    "price": 69.99,
+    "discountPercent": 12,
+    "image": "https://picsum.photos/seed/mediaplayer/200/200"
+  },
+  {
+    "id": "28",
+    "title": "Noise Cancelling Over-Ear Headphones",
+    "rate": 4.6,
+    "totalRate": 530,
+    "price": 149.99,
+    "discountPercent": 20,
+    "image": "https://picsum.photos/seed/overear/200/200"
+  },
+  {
+    "id": "29",
+    "title": "Smart Wi-Fi LED Strip Lights 10m",
+    "rate": 4.4,
+    "totalRate": 410,
+    "price": 34.99,
+    "discountPercent": 25,
+    "image": "https://picsum.photos/seed/ledstrip/200/200"
+  },
+  {
+    "id": "30",
+    "title": "Portable Bluetooth Projector",
+    "rate": 4.3,
+    "totalRate": 245,
+    "price": 199.99,
+    "discountPercent": 18,
+    "image": "https://picsum.photos/seed/projector/200/200"
+  },
+  {
+    "id": "31",
+    "title": "Wireless Charging Stand 3-in-1",
+    "rate": 4.5,
+    "totalRate": 355,
+    "price": 49.99,
+    "discountPercent": 15,
+    "image": "https://picsum.photos/seed/chargingstand/200/200"
+  },
+  {
+    "id": "32",
+    "title": "USB Microphone for Streaming",
+    "rate": 4.7,
+    "totalRate": 500,
+    "price": 89.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/microphone/200/200"
+  },
+  {
+    "id": "33",
+    "title": "Smart Wi-Fi Plug Power Strip",
+    "rate": 4.6,
+    "totalRate": 372,
+    "price": 39.99,
+    "discountPercent": 20,
+    "image": "https://picsum.photos/seed/powerstrip/200/200"
+  },
+  {
+    "id": "34",
+    "title": "Mechanical Keyboard with Blue Switches",
+    "rate": 4.8,
+    "totalRate": 450,
+    "price": 119.99,
+    "discountPercent": 15,
+    "image": "https://picsum.photos/seed/blueswitch/200/200"
+  },
+  {
+    "id": "35",
+    "title": "1080p Baby Monitor with Two-Way Audio",
+    "rate": 4.4,
+    "totalRate": 280,
+    "price": 79.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/babymonitor/200/200"
+  },
+  {
+    "id": "36",
+    "title": "Smart Robot Vacuum Cleaner",
+    "rate": 4.5,
+    "totalRate": 620,
+    "price": 249.99,
+    "discountPercent": 22,
+    "image": "https://picsum.photos/seed/robotvacuum/200/200"
+  },
+  {
+    "id": "37",
+    "title": "Gaming Headset with Mic RGB",
+    "rate": 4.3,
+    "totalRate": 410,
+    "price": 69.99,
+    "discountPercent": 18,
+    "image": "https://picsum.photos/seed/gamingheadset/200/200"
+  },
+  {
+    "id": "38",
+    "title": "Wireless Keyboard and Mouse Combo",
+    "rate": 4.4,
+    "totalRate": 385,
+    "price": 49.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/comboset/200/200"
+  },
+  {
+    "id": "39",
+    "title": "1080p Portable Projector Mini",
+    "rate": 4.3,
+    "totalRate": 205,
+    "price": 159.99,
+    "discountPercent": 15,
+    "image": "https://picsum.photos/seed/miniprojector/200/200"
+  },
+  {
+    "id": "40",
+    "title": "Wi-Fi Smart Scale Body Analyzer",
+    "rate": 4.5,
+    "totalRate": 320,
+    "price": 59.99,
+    "discountPercent": 20,
+    "image": "https://picsum.photos/seed/smartscale/200/200"
   }
-
-
   
   ]
 }

@@ -19,7 +19,7 @@
     <div class="search-decor">
         <div class="search-decor-border">
             <img src="../../../assets/images/search-icon.svg" alt="search-icon" class="search-img-decor">
-            <input type="text" placeholder="Search products..." class="input-decor">
+            <input type="text" placeholder="Search products..." class="input-decor" [formControl]="searchControl">
         </div>
         
         <button class="cart-btn" routerLink="shopping-cart">
