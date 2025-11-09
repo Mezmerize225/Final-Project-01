@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../../services/products.service';
 import { IProduct } from '../../models/product.model';
 
+
 @Component({
   selector: 'app-product-details',
   imports: [],
@@ -22,12 +23,17 @@ export class ProductDetailsComponent implements OnInit{
   }
 
   private findProduct(): void {
-    const products = this.productService.getProducts();
-    const product = products.find(({ id }) => Number(this.productId) === id);
+    const products = this.productService.getProducts().subscribe(products => {
+      const product = products.find(({ id }) => this.productId === id);
+      if(product) {
+        this.product = product;
+      }
+    })
+    // const product = products.find(({ id }) => Number(this.productId) === id);
     // this.productService.getProducts().subscribe(product => this.products = product);
 
-    if(product) {
-      this.product = product;
-    }
+    // if(product) {
+    //   this.product = product;
+    // }
   }
 }

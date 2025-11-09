@@ -66,6 +66,10 @@ header {
         background: none;
         // padding: 0px 8px 8px 8px;
         position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .cart-bg {

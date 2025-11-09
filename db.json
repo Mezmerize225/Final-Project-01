@@ -1,18 +1,99 @@
 {
   "products": [
-    { "id": "1", "title": "a title", "rate": 100, "totalRate": 124, "price": 66, "discountPercent": 33, "image": "headphones" },
-    { "id": "2", "title": "another title", "rate": 20, "totalRate": 120, "price": 25, "image": "headphones" },
-    { "id": "3", "title": "title 3", "rate": 50, "totalRate": 67, "price": 76, "discountPercent": 30, "image": "headphones" },
-    { "id": "4", "title": "title 4", "rate": 29, "totalRate": 53, "price": 45, "image": "headphones" },
-    { "id": "5", "title": "title 5", "rate": 100, "totalRate": 124, "price": 66, "discountPercent": 33, "image": "headphones" },
-    { "id": "6", "title": "title 6", "rate": 20, "totalRate": 120, "price": 25, "image": "headphones" },
-    { "id": "7", "title": "title 7", "rate": 50, "totalRate": 67, "price": 76, "discountPercent": 30, "image": "headphones" },
-    { "id": "8", "title": "title 8", "rate": 29, "totalRate": 53, "price": 45, "image": "headphones" },
-    { "id": "9", "title": "title 9", "rate": 100, "totalRate": 124, "price": 66, "discountPercent": 33, "image": "headphones" },
-    { "id": "10", "title": "title 10", "rate": 20, "totalRate": 120, "price": 25, "image": "headphones" },
-    { "id": "11", "title": "title 11", "rate": 50, "totalRate": 67, "price": 76, "discountPercent": 30, "image": "headphones" },
-    { "id": "12", "title": "title 12", "rate": 29, "totalRate": 53, "price": 45, "image": "headphones" }
-  
+    
+   
+  {
+    "id": "1",
+    "title": "Wireless Bluetooth Headphones",
+    "rate": 4.5,
+    "totalRate": 238,
+    "price": 79.99,
+    "discountPercent": 15,
+    "image": "https://picsum.photos/seed/headphones/200/200"
+  },
+  {
+    "id": "2",
+    "title": "Smart Fitness Watch",
+    "rate": 4.2,
+    "totalRate": 512,
+    "price": 129.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/watch/200/200"
+  },
+  {
+    "id": "3",
+    "title": "Ergonomic Wireless Mouse",
+    "rate": 4.6,
+    "totalRate": 410,
+    "price": 39.99,
+    "discountPercent": 5,
+    "image": "https://picsum.photos/seed/mouse/200/200"
+  },
+  {
+    "id": "4",
+    "title": "Mechanical Gaming Keyboard RGB",
+    "rate": 4.7,
+    "totalRate": 355,
+    "price": 99.99,
+    "discountPercent": 12,
+    "image": "https://picsum.photos/seed/keyboard/200/200"
+  },
+  {
+    "id": "5",
+    "title": "4K Ultra HD Monitor 27\"",
+    "rate": 4.8,
+    "totalRate": 366,
+    "price": 349.99,
+    "discountPercent": 20,
+    "image": "https://picsum.photos/seed/monitor/200/200"
+  },
+  {
+    "id": "6",
+    "title": "Portable SSD 1TB USB-C",
+    "rate": 4.8,
+    "totalRate": 512,
+    "price": 159.99,
+    "discountPercent": 18,
+    "image": "https://picsum.photos/seed/ssd/200/200"
+  },
+  {
+    "id": "7",
+    "title": "Noise Cancelling Earbuds Pro",
+    "rate": 4.4,
+    "totalRate": 685,
+    "price": 89.99,
+    "discountPercent": 10,
+    "image": "https://picsum.photos/seed/earbuds/200/200"
+  },
+  {
+    "id": "8",
+    "title": "Smart Home Security Camera",
+    "rate": 4.5,
+    "totalRate": 420,
+    "price": 69.99,
+    "discountPercent": 25,
+    "image": "https://picsum.photos/seed/camera/200/200"
+  },
+  {
+    "id": "9",
+    "title": "USB-C Hub with HDMI and SD Card Reader",
+    "rate": 4.3,
+    "totalRate": 220,
+    "price": 45.0,
+    "discountPercent": 8,
+    "image": "https://picsum.photos/seed/hub/200/200"
+  },
+  {
+    "id": "10",
+    "title": "Wireless Charging Pad Fast Charge",
+    "rate": 4.5,
+    "totalRate": 299,
+    "price": 29.99,
+    "discountPercent": 15,
+    "image": "https://picsum.photos/seed/charger/200/200"
+  }
+
+
   
   ]
 }
