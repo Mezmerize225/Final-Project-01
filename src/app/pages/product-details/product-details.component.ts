@@ -2,11 +2,13 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../../services/products.service';
 import { IProduct } from '../../models/product.model';
+import { CurrencyPipe } from '@angular/common';
+import { AddToCartComponent } from '../../components/add-to-cart/add-to-cart.component';
 
 
 @Component({
   selector: 'app-product-details',
-  imports: [],
+  imports: [CurrencyPipe, AddToCartComponent],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.scss'
 })

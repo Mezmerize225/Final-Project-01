@@ -22,7 +22,7 @@
                     <div class="discount-percent">
                         <span>30% OFF</span>
                     </div>
-                    <img src="{{product.image}}" alt="image" width="592px" height="384">
+                    <!-- <img src="{{product.image}}" alt="image" width="592px" height="384"> -->
                 </div>
             </div>
             <div class="more-img">
@@ -46,14 +46,47 @@
                         <img src="../../../assets/images/star.svg" alt="star-rate-image" width="16.5px" height="16px">
                         <img src="../../../assets/images/star.svg" alt="star-rate-image" width="16.5px" height="16px">  
                     </div>
-                    <p>(124 reviews)</p>
+                    <p> ({{ product.totalRate }} reviews) </p>
                 </div>
                 <span class="stock-item">In Stock</span>
             </div>
-            <div>
+            <div class="price-category">
+                <div class="price-category-items">
+                    @if(product.discountPercent) {
+                        <div style="font-weight: 700; font-size: 36px;">
+                            {{ product.discountPercent }}
+                        </div>
+                    <!-- ////currency 'USD'  აკლია /// -->
+                        <div style="font-size: 24px; font-weight: 400; text-decoration: line-through; color: #6B7280;">
+                            {{ product.price }} 
+                            </div>
+                        <div class="discount-item">
+                            <p>Save 30%</p>
+                        </div>
+                    } @else {
+                        <!-- ////currency 'USD'  აკლია /// -->
+                        <div style="font-size: 36px; font-weight: 700;">
+                            {{ product.price }}
+                        </div>
+                    }                   
+                </div>
+                <div class="free-shipping-text">
+                    Free shipping on orders over $50
+                </div>
+                
                 
             </div>
-            <div></div>
+            <div>
+                <div>
+                    <div style="display: flex; gap: 16px; border: none; background-color: blue;">
+                        <div>
+                            <app-add-to-cart></app-add-to-cart>
+                        </div>
+                        <button></button>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
             <div></div>
         </div>
 

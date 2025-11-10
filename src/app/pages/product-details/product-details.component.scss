@@ -58,14 +58,14 @@
 
     .product-title {
         height: 104px;
-        background-color: #EF4444;
 
         h2 {
             margin: 5px 0px 5px 0px;
         }
 
         h5 {
-            margin: 5px 0px 0px 0px;
+            margin-bottom: 5px;
+            display: flex;
         }
     }
 }
@@ -96,4 +96,35 @@
     justify-content: center;
     align-items: center;
     gap: 0.75px;
+}
+
+.price-category {
+    height: 68px;
+}
+
+.price-category-items {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.discount-item {
+    width: 85px;
+    height: 28px;
+    background-color: #FEE2E2;
+    border-radius: 4px;
+    
+
+    p {
+        color: #B91C1C;
+        display: flex;
+        margin-top: 4px;
+        justify-content: center;
+    }
+}
+
+.free-shipping-text {
+    color: #16A34A;
+    font-family: 400;
+    font-size: 14px;
 }

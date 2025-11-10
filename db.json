@@ -18,7 +18,7 @@
     "rate": 4.2,
     "totalRate": 512,
     "price": 129.99,
-    "discountPercent": 10,
+    
     "image": "https://picsum.photos/seed/watch/200/200"
   },
   {
@@ -45,7 +45,7 @@
     "rate": 4.8,
     "totalRate": 366,
     "price": 349.99,
-    "discountPercent": 20,
+    
     "image": "https://picsum.photos/seed/monitor/200/200"
   },
   {
@@ -63,7 +63,7 @@
     "rate": 4.4,
     "totalRate": 685,
     "price": 89.99,
-    "discountPercent": 10,
+
     "image": "https://picsum.photos/seed/earbuds/200/200"
   },
   {

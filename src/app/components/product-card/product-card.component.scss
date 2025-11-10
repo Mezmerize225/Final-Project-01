@@ -5,3 +5,9 @@ div {
 .price-decor {
     text-decoration: line-through;
 }
+
+.cursor-active {
+    :hover {
+        cursor: pointer;
+    }
+}
