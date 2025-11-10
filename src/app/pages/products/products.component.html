@@ -1,13 +1,22 @@
-<div class="products-decor">
-    <h3>
-        All Products
-    </h3>
-    <h5>
-        Showing 1-6 of 100 results
-    </h5>
-    <div class="product-card-decor">
+<div>
+    <div class="product-result">
+        <div class="product-result-inner">
+            <h3 style="font-size: 24px; font-weight: 700; margin: 0px;">
+                All Products
+            </h3>
+            <h5 style="font-size: 16px; font-weight: 400; margin-top: 8px;">
+                Showing 1-6 of 100 results
+            </h5>
+
+        </div>
+    </div>
+    
+    <div class="product-list">
         @for(product of products; track product.id) {
-            <app-product-card [product]="product" (cardClick)="onCardClick(product.id)"></app-product-card>
+            <div>
+                <app-product-card [product]="product" (cardClick)="onCardClick(product.id)"></app-product-card>
+            </div>                
         }
     </div>
+    
 </div>

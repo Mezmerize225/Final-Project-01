@@ -1,31 +1,39 @@
-<div >
+<div class="product-card-decor">
 
     <div (click)="cardClick.emit()" class="cursor-active">
     
     
     <!-- <img src="../../../assets/images/{{product().image}}.png" alt="headphone-image" width="200px"> -->
-     <!-- <img [src]=" {{product().image}} " alt="image" width="200px"> -->
-    <br>
-    {{ product().title }}
-    <br>
-    {{ product().rate }}
-    ({{ product().totalRate }})
-    <br>
-    @if(product().discountPercent) {
-        <span>
-            {{ product().discountPercent | currency: 'USD' }}
-        </span>
-        <span class="price-decor">
-            {{ product().price | currency: 'USD' }}
-        </span>
+        <img [src]="product().image" alt="image" width="277.33px" height="192px">
 
-    } @else {
-        {{ product().price | currency: 'USD' }}
-    }
-    <br>
+        <div class="product-text">
 
-    </div>
-    
-    <app-add-to-cart></app-add-to-cart>
+            <div style="padding: 24px 24px 8px 24px;">{{ product().title }}</div>
+            <div style="padding-left: 24px; padding-bottom: 12px;">
+                {{ product().rate }}
+                ({{ product().totalRate }})
+            </div>
+
+            <div style="padding-left: 24px; padding-bottom: 16px; display: flex; align-items: center;">
+                @if(product().discountPercent) {
+                    <span style="font-size: 24px; font-weight: 700; padding-right: 7px;">
+                        {{ product().discountPercent | currency: 'USD' }}
+                    </span>
+                    <span class="price-decor">
+                        {{ product().price | currency: 'USD' }}
+                    </span>
+
+                } @else {
+                    <div style="font-size: 24px; font-weight: 700;">
+                        {{ product().price | currency: 'USD' }}
+                    </div>  
+                }
+            </div>
+      
+        </div>
+
+    </div> 
+
+    <app-add-to-cart class="position-abs"></app-add-to-cart>
 
 </div>
