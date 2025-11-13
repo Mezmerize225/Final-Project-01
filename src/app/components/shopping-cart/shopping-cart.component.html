@@ -1,7 +1,17 @@
 <div>
-    shopping card works
-    <br>
-    figma 3rd page
+
+    <button>Clear</button>
+
+    @for(item of cartService.cartItems(); track item.id) {
+        <span> {{ item.title }} </span>
+        <p> {{ item.quantity }} </p>
+        <button>-</button>
+        <button (click)="cartService.increaseAmount(item.id)">+</button>
+    }
+
+    <!-- click = " item.quantity === 1? cartService.removeItem(item.id): cartService.dicreaseAmount(item.id) " -->
+
+    
 
 
 </div>

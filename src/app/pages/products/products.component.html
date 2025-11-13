@@ -14,7 +14,7 @@
     <div class="product-list">
         @for(product of products; track product.id) {
             <div>
-                <app-product-card [product]="product" (cardClick)="onCardClick(product.id)"></app-product-card>
+                <app-product-card [product]="product" (cardClick)="onCardClick(product.id)" (addToCart)="cartService.addCartItem(product)"></app-product-card>
             </div>                
         }
     </div>

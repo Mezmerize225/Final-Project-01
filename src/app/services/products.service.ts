@@ -12,11 +12,19 @@ export class ProductsService {
   private http = inject(HttpClient);
 
   getProducts(): Observable<IProduct[]> {
-    return this.http.get<IProduct[]>('http://localhost:3000/products');
+    return this.http.get<IProduct[]>('http://localhost:3000/products').pipe(
+      map((e) => {
+        return e.map(item => {
+          if(item.discountPercent) {
+            return {...item, newPrice: item.price - (item.price*item.discountPercent/100)}
+          } return item;
+         })
+      })
+    );
   }
 
   private searchControl = new FormControl('');
-  allProducts: IProduct[] = products;
+  allProducts: IProduct[] = products as any;
   filteredProducts: IProduct[] = [];
 
   ngOnInit() {
