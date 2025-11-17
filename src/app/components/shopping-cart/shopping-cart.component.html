@@ -5,7 +5,7 @@
     @for(item of cartService.cartItems(); track item.id) {
         <span> {{ item.title }} </span>
         <p> {{ item.quantity }} </p>
-        <button>-</button>
+        <button (click)="cartService.decreaseAmount(item.id)">-</button>
         <button (click)="cartService.increaseAmount(item.id)">+</button>
     }
 

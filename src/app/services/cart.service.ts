@@ -43,5 +43,28 @@ export class CartService {
 
   }
 
+  public decreaseAmount(productID: string) {
+    this.cartItems.update((prev) => {
+        return prev.map((item) => {
+          if(item.id === productID) {
+
+            if(item.quantity === 1) {
+              this.removeItem(item.id);
+              return null as any;
+            } else {
+              return {...item, quantity: item.quantity - 1}
+            }
+          } return item;
+        }).filter(Boolean);
+      })
+
+  }
+
+  public removeItem(productID: string) {
+    this.cartItems.update((prev) => {
+      return prev.filter(item => item.id !== productID);
+    })
+  }
+
 
 }
