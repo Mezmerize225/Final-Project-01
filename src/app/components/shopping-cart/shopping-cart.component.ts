@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, output } from '@angular/core';
 import { CartService } from '../../services/cart.service';
 
 @Component({
@@ -9,4 +9,5 @@ import { CartService } from '../../services/cart.service';
 })
 export class ShoppingCartComponent {
   public cartService = inject(CartService);
+  // public clearAll = output<void>();
 }

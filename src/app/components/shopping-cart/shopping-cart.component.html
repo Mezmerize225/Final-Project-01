@@ -1,6 +1,6 @@
 <div>
 
-    <button>Clear</button>
+    <button (click)="cartService.clearAll()">Clear</button>
 
     @for(item of cartService.cartItems(); track item.id) {
         <span> {{ item.title }} </span>
