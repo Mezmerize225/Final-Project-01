@@ -1,33 +1,20 @@
-<div>
-    figma 2nd page
-
-</div>
-
-<div>
-    product id is {{ productId }}
-    <!-- {{ product.title }} -->
-</div>
-
-<div>
-    @if(product) {
-        {{ product.title }}
-    }
-</div>
-
-@if(product) {
+<!-- @if(product) {
 
 } @else {
     errorPage;
-}
+} -->
 
 <div class="details-main">
     <div class="details-general">
         <div>
             <div>
                 <div>
-                    <div class="discount-percent">
-                        <span>30% OFF</span>
-                    </div>
+                    @if(product.discountPercent) {
+                        <div class="discount-percent">
+                            <span>{{ product.discountPercent }}% OFF</span>
+                        </div>
+                    }
+                    
                     <img src="{{product.image}}" alt="image" width="592px" height="384">
                 </div>
             </div>
@@ -60,14 +47,14 @@
                 <div class="price-category-items">
                     @if(product.discountPercent) {
                         <div style="font-weight: 700; font-size: 36px;">
-                            {{ product.discountPercent | currency: 'USD'}}
+                            {{ product.newPrice | currency: 'USD'}}
                         </div>
-                    <!-- ////currency 'USD'  აკლია /// -->
+                    
                         <div style="font-size: 24px; font-weight: 400; text-decoration: line-through; color: #6B7280;">
                             {{ product.price | currency: 'USD'}} 
                             </div>
                         <div class="discount-item">
-                            <p>Save 30%</p>
+                            <p>Save {{product.discountPercent}}%</p>
                         </div>
                     } @else {
                         <!-- ////currency 'USD'  აკლია /// -->

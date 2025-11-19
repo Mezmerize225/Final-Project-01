@@ -2,8 +2,6 @@
 
     <div >
     
-    
-    <!-- <img src="../../../assets/images/{{product().image}}.png" alt="headphone-image" width="200px"> -->
         <img [src]="product().image" alt="image" width="277.33px" height="192px" (click)="cardClick.emit()" class="cursor-active">
 
         <div class="product-text">
@@ -17,7 +15,7 @@
             <div style="padding-left: 24px; padding-bottom: 16px; display: flex; align-items: center;">
                 @if(product().discountPercent) {
                     <span style="font-size: 24px; font-weight: 700; padding-right: 7px;">
-                        {{ product().discountPercent | currency: 'USD' }}
+                        {{ product().newPrice | currency: 'USD' }}
                     </span>
                     <span class="price-decor">
                         {{ product().price | currency: 'USD' }}

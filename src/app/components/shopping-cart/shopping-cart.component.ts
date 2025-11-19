@@ -9,5 +9,4 @@ import { CartService } from '../../services/cart.service';
 })
 export class ShoppingCartComponent {
   public cartService = inject(CartService);
-  // public clearAll = output<void>();
 }

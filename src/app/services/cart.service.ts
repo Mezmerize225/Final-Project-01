@@ -67,7 +67,6 @@ export class CartService {
   }
 
   public clearAll() {
-    // this.cartItems.destroy();
     this.cartItems.set([]);
   }
 

@@ -2,8 +2,6 @@ import { Component, input, output } from '@angular/core';
 import { IProduct } from '../../models/product.model';
 import { CurrencyPipe } from '@angular/common';
 
-
-
 @Component({
   selector: 'app-product-card',
   imports: [CurrencyPipe],

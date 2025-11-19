@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { ProductsService } from '../../services/products.service';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { HeaderCartItemsComponent } from '../header-cart-items/header-cart-items.component';
@@ -7,7 +7,7 @@ import { HeaderCartItemsComponent } from '../header-cart-items/header-cart-items
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterLinkActive, ReactiveFormsModule, HeaderCartItemsComponent],
+  imports: [RouterLink, ReactiveFormsModule, HeaderCartItemsComponent],
   // FormControl
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
