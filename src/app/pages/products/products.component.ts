@@ -19,11 +19,9 @@ export class ProductsComponent {
 
   ngOnInit() {
     this.productService.getProducts().subscribe(product => this.products = product);
-    console.log(this.products, '///Products');
   }
 
   onCardClick(id: string) {
     this.router.navigate(['/products', id])
-    console.log(id, '//ID');
   } 
 }

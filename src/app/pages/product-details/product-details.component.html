@@ -57,7 +57,6 @@
                             <p>Save {{product.discountPercent}}%</p>
                         </div>
                     } @else {
-                        <!-- ////currency 'USD'  აკლია /// -->
                         <div style="font-size: 36px; font-weight: 700;">
                             {{ product.price | currency: 'USD'}}
                         </div>
@@ -65,24 +64,58 @@
                 </div>
                 <div class="free-shipping-text">
                     Free shipping on orders over $50
-                </div>
-                
-                
+                </div>               
             </div>
+
             <div>
                 <div>
-                    <div style="display: flex; gap: 16px; border: none; background-color: blue;">
+                    <div class="btn-bg">
                         <div>
-                            
+                            <button class="add-btn" (addToCart)="cartService.addCartItem(product)">
+                                <img src="../../../assets/images/cart-icon-white.svg" alt="cart-icon" style="margin-right: 8px;">
+                                Add to Cart
+                            </button>    
                         </div>
-                        <button></button>
+                        <button class="buy-btn">Buy Now</button>
                     </div>
-                    <div></div>
+                    <div style="margin-top: 183px; border-top: 1px solid #b7b8b9;">
+                        <p style="font-size: 16px; font-weight: 600;">Key Features</p>
+                        <ul style="list-style: none; font-size: 16px; font-weight: 400; padding-left: 0px;">
+                            <li>
+                                <img src="../../../assets/images/check-icon.svg" alt="check-icon">
+                                Active Noise Cancellation
+                            </li>
+                            <li>
+                                <img src="../../../assets/images/check-icon.svg" alt="check-icon">
+                                30-hour battery life
+                            </li>
+                            <li>
+                                <img src="../../../assets/images/check-icon.svg" alt="check-icon">
+                                Quick charge: 3 min = 3 hours
+                            </li>
+                            <li>
+                                <img src="../../../assets/images/check-icon.svg" alt="check-icon">
+                                Premium comfort design
+                            </li>
+                            <li>
+                                <img src="../../../assets/images/check-icon.svg" alt="check-icon">
+                                Multipoint Bluetooth connectivity
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div></div>
+            
         </div>
 
     </div>
-
+    <div class="details-bg">
+        <button class="details-title">Description</button>
+        <div style="height: 220px; border-top: 1px solid #b7b8b9;">
+            <p style="font-size: 20px; font-weight: 600; margin-left: 24px;">Product Description</p>
+            <p class="details-text">Experience exceptional sound quality with our Premium Wireless Bluetooth Headphones. Featuring industry-leading noise cancellation technology, these headphones deliver an immersive audio experience whether you're commuting, working, or relaxing at home.</p>
+            <p class="details-text">The advanced 40mm drivers produce rich, detailed sound across all frequencies, while the comfortable over-ear design ensures you can wear them for hours without discomfort. With up to 30 hours of battery life and quick charge capabilities, these headphones are perfect for your busy lifestyle.</p>
+            <p class="details-text">Built with premium materials and available in multiple colors, these headphones combine style with substance to deliver an unparalleled listening experience.</p>
+        </div>
+    </div>
 </div>

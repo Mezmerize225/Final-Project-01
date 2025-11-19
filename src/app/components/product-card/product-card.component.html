@@ -1,5 +1,11 @@
 <div class="product-card-decor">
 
+    @if(product().discountPercent) {
+        <div class="discount-percent">
+            <span>{{ product().discountPercent }}% OFF</span>
+        </div>
+    }
+
     <div >
     
         <img [src]="product().image" alt="image" width="277.33px" height="192px" (click)="cardClick.emit()" class="cursor-active">
@@ -30,7 +36,7 @@
       
         </div>
         
-        <button (click)="addToCart.emit()">Add to Cart</button>
+        <button (click)="addToCart.emit()" class="position-abs">Add to Cart</button>
     </div> 
 
 

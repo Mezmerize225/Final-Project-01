@@ -32,10 +32,37 @@
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
+    width: 229.33px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #2563EB;
+    border: none;
+    color: #ffffff;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        box-shadow: 0 5px #9b9a9a;
+//   transform: translateY(1px);
+}
+    
 }
 
-button {
+.discount-percent {
+    width: 86px;
+    height: 28px;
+    border-radius: 9999px;
+    background-color: #EF4444;
+    margin-top: 16px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    bottom: 30px;
-    left: 24px;
+
+    span {
+        color: white;
+    }
 }

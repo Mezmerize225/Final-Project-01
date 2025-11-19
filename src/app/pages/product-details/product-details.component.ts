@@ -1,10 +1,9 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, input, OnInit, output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsService } from '../../services/products.service';
 import { IProduct } from '../../models/product.model';
 import { CurrencyPipe } from '@angular/common';
-
-
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-product-details',
@@ -19,6 +18,10 @@ export class ProductDetailsComponent implements OnInit{
   public productId!: string;
   public product!: IProduct;
   // public errorPage = ;
+
+  // public product = input.required<IProduct>();
+  // public addToCart = output<void>();
+  public cartService = inject(CartService);
 
   public ngOnInit() {
     this.productId = this.route.snapshot.paramMap.get('id') as string;
