@@ -3,6 +3,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ShoppingCartPageComponent } from './pages/shopping-cart/shopping-cart.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path: '**',
         component: PageNotFoundComponent
+    },
+    {
+        path: 'checkout',
+        component: CheckoutComponent
     }
 ];

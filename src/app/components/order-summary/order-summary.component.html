@@ -1,0 +1,33 @@
+<div class="summary-container">
+    <div class="container-01">
+        <p style="margin-left: 24px;">Order Summary</p>
+    </div>
+    <div class="container-02">
+        <div class="inner-02 inner-02-text">
+            <span>Subtotal ({{cartService.cartItems().length}} items)</span>
+            <span> {{ cartService.subtotalPrice() | currency: 'USD'}} </span>
+        </div>
+        <div class="inner-02">
+            <span class="inner-02-text">Shipping</span>
+            <span class="shipping-price">Free</span>
+        </div>
+        <div class="inner-02 inner-02-text">
+            <span>Tax</span>
+            <span>$23.20</span>
+        </div>
+        <div class="inner-02 discount-text">
+            <span>Discount</span>
+            <span> -{{ cartService.totalDiscount() | currency: 'USD'}} </span>
+        </div>
+        <div class="inner-03">
+            <div class="total-price">
+                <div>Total</div>
+                <div> {{ cartService.totalPrice() | currency: 'USD'}} </div>
+            </div>
+            <span class="saved-discount">You saved {{ cartService.totalDiscount() | currency: 'USD'}}</span>
+
+        </div>
+    </div>
+    <div></div>
+
+</div>

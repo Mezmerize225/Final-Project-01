@@ -1,0 +1,13 @@
+import { Component, inject } from '@angular/core';
+import { CartService } from '../../services/cart.service';
+import { CurrencyPipe } from '@angular/common';
+
+@Component({
+  selector: 'app-order-summary',
+  imports: [CurrencyPipe],
+  templateUrl: './order-summary.component.html',
+  styleUrl: './order-summary.component.scss'
+})
+export class OrderSummaryComponent {
+  public cartService = inject(CartService);
+}

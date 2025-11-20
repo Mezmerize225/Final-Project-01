@@ -1,18 +1,6 @@
 <div>
-
-    <!-- <button (click)="cartService.clearAll()">Clear</button>
-
-    @for(item of cartService.cartItems(); track item.id) {
-        <span> {{ item.title }} </span>
-        <p> {{ item.quantity }} </p>
-        <button (click)="cartService.decreaseAmount(item.id)">-</button>
-        <button (click)="cartService.increaseAmount(item.id)">+</button>
-    } -->
-
-</div>
-
-<div>
     <div style="width: 810.66px; margin-left: 104px;">
+
         <div class="shopping-cart-items">
             <div style="height: 77px; border-bottom: 1px solid #E5E7EB; display: flex; justify-content: space-between; align-items: center; padding: 0px 24px 0px 24px;">
                 <div style="font-size: 20px; font-weight: 600;">
@@ -22,13 +10,14 @@
                 <button (click)="cartService.clearAll()" class="btn-clear">Clear All</button>               
             </div>
 
-
             <div> 
                 @for(item of cartService.cartItems(); track item.id) {
                     <div class="cart-item">
+
                         <div style="width: 80px; height: 80px; border-radius: 8px; overflow: hidden; margin-left: 24px;">
                             <img src="{{item.image}}" alt="cart-item-image">
                         </div>
+                        
                         <div style="width: 500px; height: 88px;">
                             <div style="font-size: 18px; font-weight: 600; height: 28px; margin-bottom: 4px;">
                                 {{ item.title }}
@@ -52,9 +41,9 @@
                                         {{ item.price | currency: 'USD'}} 
                                     </div>
                                 }
-
                             </div>
                         </div>
+
                         <div style="width: 148.10px; height: 44px; margin-right: 24px; display: flex;">
                             <div class="quantity-style">
                                 <button (click)="cartService.decreaseAmount(item.id)" style="margin-left: 8px; border: none; background-color: #ffffff;">
@@ -65,25 +54,24 @@
                                     <img src="../../../assets/images/plus.svg" alt="plus-icon">
                                 </button>
                             </div>
-                            <button class="delete-btn">
+                            <button (click)="cartService.removeItem(item.id)"   class="delete-btn">
                                 <img src="../../../assets/images/delete-icon.svg" alt="delete-icon">
                             </button>
-
                         </div>
-                        
+
                     </div>
                 }
             </div>
             
         </div>
+
         <div>
             <button class="continue-shopping-btn">
                 <img src="../../../assets/images/continue-shopping-icon.svg" alt="continue-shopping-icon">
                 Continue Shopping
             </button>
         </div>
-    </div>
 
-    <div></div>
+    </div>
 </div>
 

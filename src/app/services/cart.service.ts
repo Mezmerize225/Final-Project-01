@@ -70,4 +70,22 @@ export class CartService {
     this.cartItems.set([]);
   }
 
+  public subtotalPrice() {
+    let sum = 0;
+    for(let i = 0; i < this.cartItems().length; i++) {
+      sum += this.cartItems()[i].price * this.cartItems()[i].quantity;
+    }
+    return Number(sum.toFixed(2));
+  }
+
+  public totalDiscount() {
+    return this.cartItems().reduce((sum, item) =>
+      sum + item.price - item.newPrice, 0);
+  }
+
+  public totalPrice() {
+    return this.cartItems().reduce((sum, item) =>
+      sum + item.newPrice, 0);
+  }
+
 }
