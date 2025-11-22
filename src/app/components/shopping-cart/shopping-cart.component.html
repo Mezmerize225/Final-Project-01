@@ -5,7 +5,7 @@
             <div style="height: 77px; border-bottom: 1px solid #E5E7EB; display: flex; justify-content: space-between; align-items: center; padding: 0px 24px 0px 24px;">
                 <div style="font-size: 20px; font-weight: 600;">
                     Cart Items
-                    <span> ({{cartService.cartItems().length}}) </span>
+                    <span> ({{cartService.cartTotalItems()}}) </span>
                 </div>              
                 <button (click)="cartService.clearAll()" class="btn-clear">Clear All</button>               
             </div>
@@ -66,7 +66,7 @@
         </div>
 
         <div>
-            <button class="continue-shopping-btn">
+            <button class="continue-shopping-btn" routerLink="products">
                 <img src="../../../assets/images/continue-shopping-icon.svg" alt="continue-shopping-icon">
                 Continue Shopping
             </button>

@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { CartService } from '../../services/cart.service';
 import { CurrencyPipe } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-order-summary',
-  imports: [CurrencyPipe],
+  imports: [CurrencyPipe,RouterModule],
   templateUrl: './order-summary.component.html',
   styleUrl: './order-summary.component.scss'
 })

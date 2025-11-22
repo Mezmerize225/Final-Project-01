@@ -79,13 +79,23 @@ export class CartService {
   }
 
   public totalDiscount() {
-    return this.cartItems().reduce((sum, item) =>
-      sum + item.price - item.newPrice, 0);
+    return this.cartItems().reduce((sum, item) => { 
+      if(!item.newPrice) { 
+        return sum;
+      } else { 
+      return sum + (item.price - item.newPrice) * item.quantity; 
+      }
+    }, 0);
   }
 
   public totalPrice() {
-    return this.cartItems().reduce((sum, item) =>
-      sum + item.newPrice, 0);
+    return this.cartItems().reduce((sum, item) => {
+      if(!item.newPrice) {
+        return sum + (item.price * item.quantity); 
+      } else {
+        return sum + (item.newPrice * item.quantity);
+      }
+    }, 0);
   }
 
 }

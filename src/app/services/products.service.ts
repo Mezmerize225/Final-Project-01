@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { debounceTime, distinctUntilChanged, map, Observable, startWith} from 'rxjs';
+import { debounceTime, map, Observable} from 'rxjs';
 import { IProduct } from '../models/product.model';
 import { FormControl } from '@angular/forms';
 import { products } from '../../../db.json';

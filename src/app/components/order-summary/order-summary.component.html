@@ -4,7 +4,7 @@
     </div>
     <div class="container-02">
         <div class="inner-02 inner-02-text">
-            <span>Subtotal ({{cartService.cartItems().length}} items)</span>
+            <span>Subtotal ({{cartService.cartTotalItems()}} items)</span>
             <span> {{ cartService.subtotalPrice() | currency: 'USD'}} </span>
         </div>
         <div class="inner-02">
@@ -28,6 +28,35 @@
 
         </div>
     </div>
-    <div></div>
+    <div class="container-03">
+        <div class="checkout-container">
+            <button class="checkout-btn" routerLink="checkout">
+                Proceed to Checkout
+            </button>
+        </div>
+        <div class="shipping-txt">
+            <div class="ship-txt-01">
+                <img src="../../../assets/images/shipping-icon.svg" alt="shipping-icon" style="width: 20px; height: 16px;">
+                <span>Free Shipping</span>
+            </div>
+            <p class="ship-txt-02">
+                Your order qualifies for free standard shipping
+                <br>
+                (5-7 business days)
+            </p>
+        </div>
+        <div class="secure-checkout">
+            <div class="secure-01">
+                <img src="../../../assets/images/security-icon.svg" alt="security-icon" style="width: 16px; height: 16px;">
+                <span>Secure Checkout</span>
+            </div>
+            <p class="secure-02">
+                Your payment information is protected with
+                <br>
+                256-bit SSL encryption
+            </p>
+        </div>
+
+    </div>
 
 </div>

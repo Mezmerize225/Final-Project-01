@@ -24,11 +24,11 @@ export const routes: Routes = [
         component: ShoppingCartPageComponent
     },
     {
-        path: '**',
-        component: PageNotFoundComponent
-    },
-    {
         path: 'checkout',
         component: CheckoutComponent
+    },
+    {
+        path: '**',
+        component: PageNotFoundComponent
     }
 ];
