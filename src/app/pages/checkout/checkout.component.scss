@@ -1,0 +1,113 @@
+.main-container {
+    margin: 84px 104px 96px 104px; 
+    display: flex; 
+    gap: 32px;
+}
+
+.section-01 {
+    width: 810.66px;
+}
+
+.account-info {
+    height: 180px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 2px 0px rgba(#0000000D, 5%);
+}
+
+.info-01 {
+    width: 762.66px;
+    height: 32px;
+    padding: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 68px;
+    overflow: hidden;
+}
+
+.owner-info {
+    width: 762.66px;
+    height: 76px;
+    border-radius: 8px;
+    background-color: #F9FAFB;
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-info {
+    width: 226.38px;
+    height: 44px;
+    padding: 16px 0px 16px 16px;
+    display: flex;
+}
+
+.personal-info-02 {
+    width: 174.38px;
+    height: 44px;
+    gap: 12px;
+}
+
+.email-01 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.email-02 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4B5563;
+    margin: 0px;
+}
+
+.personal-btn {
+    width: 51.97px;
+    height: 20px;
+    margin: 28px 16px 28px 0px;
+}
+
+.shipping-info {
+    height: 432px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 2px 0px rgba(#0000000D, 5%);
+    margin-top: 32px;
+}
+
+.form-info {
+    height: 70px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-details {
+    width: 373.33px;
+    gap: 16px;
+    padding: 0px;
+}
+
+.first-name-form {
+    height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-input {
+    width: 373.33px;
+    height: 42px;
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+    font-size: 16px;
+    font-weight: 400;
+    text-indent: 16px;
+    padding: 0px;
+    margin-top: 8px;
+}
+
+.address-info {
+    width: 243.55px;
+}
+
