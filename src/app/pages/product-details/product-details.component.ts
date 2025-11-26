@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit, output } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { ProductsService } from '../../services/products.service';
 import { IProduct } from '../../models/product.model';
 import { CurrencyPipe } from '@angular/common';
@@ -7,7 +7,7 @@ import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-product-details',
-  imports: [CurrencyPipe],
+  imports: [CurrencyPipe, RouterModule],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.scss'
 })

@@ -47,7 +47,13 @@
                     <div class="form-details address-info">
                         <label for="first-name" class="first-name-form">State</label>
                         <br>
-                        <input type="text" placeholder="Select State" class="form-input" style="width: 243.55px;">
+                        <select class="form-input" style="width: 243.55px;">
+                            @for(stateOptions of stateOption; track stateOptions) {
+                                <option type="text" placeholder="Select State" [value]="stateOptions" >
+                                    {{ stateOptions }}
+                                </option>
+                            }
+                        </select>
                     </div>
                     <div class="form-details address-info">
                         <label for="first-name" class="first-name-form">ZIP Code</label>
