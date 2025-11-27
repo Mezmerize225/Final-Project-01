@@ -1,4 +1,5 @@
-<div class="summary-container">
+@if(mode === 'full') { 
+    <div class="summary-container">
     <div class="container-01">
         <p style="margin-left: 24px;">Order Summary</p>
     </div>
@@ -56,7 +57,70 @@
                 256-bit SSL encryption
             </p>
         </div>
+    </div>
+    </div>
+
+} @else {
+    <div class="summary-container-02">
+    <div class="container-01">
+        <p style="margin-left: 24px;">Order Summary</p>
+    </div>
+
+    <div class="container-05">
+        @for(item of cartService.cartItems(); track item.id) {
+            <div class="summary-item">
+                <div class="summary-img">
+                    <img src="{{item.image}}" alt="product-image">
+                </div>
+                <div>{{item.title}}</div>
+            </div>
+            <div class="summary-item"></div>
+        }
 
     </div>
 
-</div>
+    <div class="container-04">
+        <div class="inner-05 inner-05-text">
+            <span>Subtotal</span>
+            <span> {{ cartService.subtotalPrice() | currency: 'USD'}} </span>
+        </div>
+        <div class="inner-05">
+            <span class="inner-05-text">Shipping</span>
+            <span class="shipping-price">Free</span>
+        </div>
+        <div class="inner-05 inner-05-text">
+            <span>Tax</span>
+            <span>$23.20</span>
+        </div>
+        <div class="inner-04">
+            <div class="total-prc">
+                <div>Total</div>
+                <div> {{ cartService.totalPrice() | currency: 'USD'}} </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-03">
+        <div class="checkout-container">
+            <button class="checkout-btn horizontal-align" routerLink="/checkout">
+                <img src="../../../assets/images/order-icon.svg" alt="order-icon" style="width: 14px; height: 16px;">
+                <p>Place Order</p>
+            </button>
+            <button class="continue-btn" routerLink="/products">
+                Continue Shopping
+            </button>
+        </div>
+        <div class="order-info">
+            <div class="payment-return payment-txt">
+                <img src="../../../assets/images/security-green.svg" alt="security-green-icon" style="width: 14px; height: 14px;">
+                <span>Secure Payment</span>               
+            </div>
+            <div class="payment-return return-txt">
+                <img src="../../../assets/images/return-icon.svg" alt="return-icon" style="width: 17.5px; height: 14px;">
+                <span>Free Returns</span>               
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+}

@@ -47,7 +47,7 @@
                     <div class="form-details address-info">
                         <label for="first-name" class="first-name-form">State</label>
                         <br>
-                        <select class="form-input" style="width: 243.55px;">
+                        <select class="form-input first-name" style="width: 243.55px;">
                             @for(stateOptions of stateOption; track stateOptions) {
                                 <option type="text" placeholder="Select State" [value]="stateOptions" >
                                     {{ stateOptions }}
@@ -74,7 +74,7 @@
 
 
 
-    <app-order-summary></app-order-summary>
+    <app-order-summary mode="compact"></app-order-summary>
 
 </div>
 

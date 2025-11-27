@@ -12,7 +12,7 @@ import { FormControl } from '@angular/forms';
 export class CheckoutComponent {
   public cartService = inject(CartService);
 
-  public states: string[] = ['Washington', 'New York', 'Texas'];
+  public states: string[] = ['Select State', 'Washington', 'New York', 'Texas'];
   public stateOption = this.states;
   // public stateCategory = new FormControl('');
 }

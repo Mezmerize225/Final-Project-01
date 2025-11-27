@@ -79,7 +79,7 @@
 .checkout-container {
     width: 339.34px;
     height: 110px;
-    padding: 24px;
+    padding: 0px 24px 24px 24px;
 }
 
 .checkout-btn {
@@ -148,4 +148,114 @@
     font-size: 14px;
     font-weight: 400;
     padding: 0px 16px 16px 16px;
+}
+
+.order-info {
+    width: 341.20px;
+    height: 20px;
+    margin: 0px 24px 24px 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.payment-txt {
+    width: 126.31px;
+    margin-left: 46.69px;
+}
+
+.return-txt {
+    width: 105.64px;
+    margin-right: 46.7px;
+}
+
+.payment-return {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6B7280;
+    gap: 4px;
+}
+
+.horizontal-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.continue-btn {
+    width: 341.34px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+    background-color: #FFFFFF;
+}
+
+.container-04 {
+    height: 149px;
+    box-sizing: border-box;
+    margin: 24px;
+}
+
+.inner-04 {
+    height: 28px;
+    border-top: 1px solid #E5E7EB;
+    font-size: 20px;
+    font-weight: 700;
+    
+    padding-top: 13px;
+}
+
+.total-prc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-05 {
+    height: 24px; 
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.inner-05-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4B5563;
+}
+
+.summary-container-02 {
+    width: 389.34px;
+    height: 637px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px 0px rgba(#0000000D, 5%);
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    margin-right: 104px;
+    margin-left: 32px;
+}
+
+.container-05 {
+    width: 341.34px;
+    height: 186px;
+    margin: 24px;
+}
+
+.summary-item {
+    height: 85px;
+    border-bottom: 1px solid #F3F4F6;
+    display: flex;
+}
+
+.summary-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
 }
