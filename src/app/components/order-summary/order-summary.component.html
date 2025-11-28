@@ -62,8 +62,8 @@
 
 } @else {
     <div class="summary-container-02">
-    <div class="container-01">
-        <p style="margin-left: 24px;">Order Summary</p>
+    <div class="container-06">
+        <div>Order Summary</div>
     </div>
 
     <div class="container-05">
@@ -72,9 +72,18 @@
                 <div class="summary-img">
                     <img src="{{item.image}}" alt="product-image">
                 </div>
-                <div>{{item.title}}</div>
+                <div class="summary-item-txt">
+                    <div style="font-size: 16px; font-weight: 500; margin-bottom: 2px;">{{ item.title }}</div>
+                    <div style="color: #4B5563; font-size: 14px; font-weight: 400; margin-bottom: 5px;">Qty: {{ item.quantity }}</div>
+                    <div style="font-size: 16px; font-weight: 700;">
+                        @if(item.newPrice) {
+                            {{item.newPrice | currency: 'USD'}}
+                        } @else {
+                            {{item.price | currency: 'USD'}}
+                        }
+                    </div>
+                </div>
             </div>
-            <div class="summary-item"></div>
         }
 
     </div>
@@ -82,7 +91,7 @@
     <div class="container-04">
         <div class="inner-05 inner-05-text">
             <span>Subtotal</span>
-            <span> {{ cartService.subtotalPrice() | currency: 'USD'}} </span>
+            <span> {{ cartService.totalPrice() | currency: 'USD'}} </span>
         </div>
         <div class="inner-05">
             <span class="inner-05-text">Shipping</span>

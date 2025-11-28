@@ -245,17 +245,34 @@
 .container-05 {
     width: 341.34px;
     height: 186px;
-    margin: 24px;
+    margin: 0px 24px 24px 24px;
 }
 
 .summary-item {
     height: 85px;
     border-bottom: 1px solid #F3F4F6;
     display: flex;
+    gap: 16px;
+    margin-top: 16px;
 }
 
 .summary-img {
     width: 64px;
     height: 64px;
     border-radius: 8px;
+    overflow: hidden;
+}
+
+.summary-item-txt {
+    width: 261.34px;
+    height: 68px;
+}
+
+.container-06 {
+    height: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 24px 24px 8px 24px;
 }
