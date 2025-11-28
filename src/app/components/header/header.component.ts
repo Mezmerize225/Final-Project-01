@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ProductsService } from '../../services/products.service';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderCartItemsComponent } from '../header-cart-items/header-cart-items.component';
 
 
@@ -16,8 +16,8 @@ import { HeaderCartItemsComponent } from '../header-cart-items/header-cart-items
 export class HeaderComponent {
   private productService = inject(ProductsService);
 
-  // public searchControl = this.productService.getSearchCriteria();
+  public searchControl = this.productService.getSearchControl();
 
-  public products$ = this.productService.filteredProducts;
+  public products$ = this.productService.filteredProducts$;
 
 }

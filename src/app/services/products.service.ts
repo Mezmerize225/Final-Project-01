@@ -24,20 +24,45 @@ export class ProductsService {
   }
 
   private searchControl = new FormControl('');
-  allProducts: IProduct[] = products as any;
-  filteredProducts: IProduct[] = [];
+  private products$ = this.getProducts();
+  // allProducts: IProduct[] = products as any;
+  // filteredProducts: IProduct[] = [];
 
-  ngOnInit() {
-    this.filteredProducts = this.allProducts;
+  public getSearchControl() {
+    return this.searchControl
+  }
+
+    public filteredProducts$ = this.searchControl.valueChanges.pipe(
+      debounceTime(300)).subscribe((searchText) => {
+      const text = (searchText || '').toLowerCase();
+      return this.products$.pipe(
+        map(products =>
+          products.filter((p) =>
+        p.title.toLowerCase().includes(text)
+          )
+        )
+      );
+      
+    });
+  
+  
+
+
+
+
+
+
+  // public functionthis() {
+  //   this.filteredProducts = this.allProducts;
 
     
-    this.searchControl.valueChanges.pipe(debounceTime(300)).subscribe((searchText) => {
-      const text = (searchText || '').toLowerCase();
-      this.filteredProducts = this.allProducts.filter((p) =>
-        p.title.toLowerCase().includes(text)
-      );
-    });
-  }
+  //   this.searchControl.valueChanges.pipe(debounceTime(300)).subscribe((searchText) => {
+  //     const text = (searchText || '').toLowerCase();
+  //     this.filteredProducts = this.allProducts.filter((p) =>
+  //       p.title.toLowerCase().includes(text)
+  //     );
+  //   });
+  // }
 
 
   // public searchCriteria$ = this.searchControl.valueChanges.pipe(
@@ -59,8 +84,10 @@ export class ProductsService {
   //   )
   // )
 
-  // public getSearchCriteria(): FormControl {
-  //   return this.searchControl
+  
+
+  // public setProducts() {
+
   // }
 
   // public getProducts(): Observable<IProduct[]> {

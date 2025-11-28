@@ -196,6 +196,9 @@
     font-weight: 600;
     color: #374151;
     background-color: #FFFFFF;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .container-04 {
