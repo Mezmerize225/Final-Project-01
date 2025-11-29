@@ -18,6 +18,4 @@ export class HeaderComponent {
 
   public searchControl = this.productService.getSearchControl();
 
-  public products$ = this.productService.filteredProducts$;
-
 }
