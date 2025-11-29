@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { debounceTime, map, Observable} from 'rxjs';
+import { debounceTime, map, Observable, startWith, switchMap} from 'rxjs';
 import { IProduct } from '../models/product.model';
 import { FormControl } from '@angular/forms';
 import { products } from '../../../db.json';
@@ -29,21 +29,24 @@ export class ProductsService {
   // filteredProducts: IProduct[] = [];
 
   public getSearchControl() {
-    return this.searchControl
+    return this.searchControl;
   }
 
     public filteredProducts$ = this.searchControl.valueChanges.pipe(
-      debounceTime(300)).subscribe((searchText) => {
-      const text = (searchText || '').toLowerCase();
-      return this.products$.pipe(
-        map(products =>
+      startWith(this.searchControl.value),
+      debounceTime(300),
+      switchMap((searchText) => {
+        const text = (searchText || '').toLowerCase();
+        return this.getProducts().pipe(
+        map((products) =>
           products.filter((p) =>
-        p.title.toLowerCase().includes(text)
-          )
+          p.title.toLowerCase().includes(text))
         )
-      );
+        )
+      })
+    );
       
-    });
+    
   
   
 

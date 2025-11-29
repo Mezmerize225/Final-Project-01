@@ -18,7 +18,7 @@ export class ProductsComponent {
   public products: IProduct[] = [];
 
   ngOnInit() {
-    this.productService.getProducts().subscribe(product => this.products = product);
+    this.productService.filteredProducts$.subscribe(product => this.products = product);
   }
 
   onCardClick(id: string) {
