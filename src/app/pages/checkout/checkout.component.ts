@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { CartService } from '../../services/cart.service';
 import { OrderSummaryComponent } from '../../components/order-summary/order-summary.component';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-checkout',
-  imports: [OrderSummaryComponent],
+  imports: [OrderSummaryComponent, ReactiveFormsModule, CommonModule],
   templateUrl: './checkout.component.html',
   styleUrl: './checkout.component.scss'
 })

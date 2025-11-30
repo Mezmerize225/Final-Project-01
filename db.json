@@ -360,7 +360,7 @@
   ],
   "orders": [
     {
-      "id": "4692",
+      "id": "8ce7",
       "firstName": "",
       "lastName": "",
       "streetAddress": "",
@@ -388,61 +388,6 @@
           "totalRate": 512,
           "price": 129.99,
           "image": "https://picsum.photos/seed/watch/200/200",
-          "quantity": 1
-        },
-        {
-          "id": "3",
-          "title": "Ergonomic Wireless Mouse",
-          "rate": 4.6,
-          "totalRate": 410,
-          "price": 39.99,
-          "discountPercent": 5,
-          "image": "https://picsum.photos/seed/mouse/200/200",
-          "newPrice": 37.990500000000004,
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "e164",
-      "firstName": "",
-      "lastName": "",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "email": "",
-      "phone": "",
-      "cart": [
-        {
-          "id": "1",
-          "title": "Wireless Bluetooth Headphones",
-          "rate": 4.5,
-          "totalRate": 238,
-          "price": 79.99,
-          "discountPercent": 15,
-          "image": "https://picsum.photos/seed/headphones/200/200",
-          "newPrice": 67.9915,
-          "quantity": 1
-        },
-        {
-          "id": "2",
-          "title": "Smart Fitness Watch",
-          "rate": 4.2,
-          "totalRate": 512,
-          "price": 129.99,
-          "image": "https://picsum.photos/seed/watch/200/200",
-          "quantity": 1
-        },
-        {
-          "id": "3",
-          "title": "Ergonomic Wireless Mouse",
-          "rate": 4.6,
-          "totalRate": 410,
-          "price": 39.99,
-          "discountPercent": 5,
-          "image": "https://picsum.photos/seed/mouse/200/200",
-          "newPrice": 37.990500000000004,
           "quantity": 1
         }
       ]

@@ -18,36 +18,37 @@
         </div>
         <div class="shipping-info">
             <div class="info-01">Shipping Information</div>
-            <form action="" style="width: 762.66px; margin-left: 24px;">
+            <form [formGroup]="checkoutForm" style="width: 762.66px; margin-left: 24px;">
                 <div class="form-info">
                     <div class="form-details">
                         <label for="first-name" class="first-name-form">First Name</label>
                         <br>
-                        <input type="text" placeholder="Sarah" class="form-input">
+                        <input type="text" formControlName="firstName" placeholder="Sarah" class="form-input">
                     </div>
                     <div class="form-details">
                         <label for="first-name" class="first-name-form">Last Name</label>
                         <br>
-                        <input type="text" placeholder="Johnson" class="form-input">
+                        <input type="text" formControlName="lastName" placeholder="Johnson" class="form-input">
                     </div>
                 </div>
                 <div class="form-info">
                     <div class="form-details">
                         <label for="first-name" class="first-name-form">Street Address</label>
                         <br>
-                        <input type="text" placeholder="123 Main Street" class="form-input" style="width: 762.66px;">
+                        <input type="text" formControlName="streetAddress" placeholder="123 Main Street" class="form-input" style="width: 762.66px;">
                     </div>
                 </div>
                 <div class="form-info">
                     <div class="form-details address-info">
                         <label for="first-name" class="first-name-form">City</label>
                         <br>
-                        <input type="text" placeholder="New York" class="form-input" style="width: 243.55px;">
+                        <input type="text" formControlName="city" placeholder="New York" class="form-input" style="width: 243.55px;">
                     </div>
                     <div class="form-details address-info">
                         <label for="first-name" class="first-name-form">State</label>
                         <br>
-                        <select class="form-input first-name" style="width: 243.55px;">
+                        <select formControlName="state" class="form-input first-name" style="width: 243.55px;">
+                            <option value="" disabled selected>Select State</option>
                             @for(stateOptions of stateOption; track stateOptions) {
                                 <option type="text" placeholder="Select State" [value]="stateOptions" >
                                     {{ stateOptions }}
@@ -58,14 +59,14 @@
                     <div class="form-details address-info">
                         <label for="first-name" class="first-name-form">ZIP Code</label>
                         <br>
-                        <input type="text" placeholder="10001" class="form-input" style="width: 243.55px;">
+                        <input type="text" formControlName="zip" placeholder="10001" class="form-input" style="width: 243.55px;">
                     </div>
                 </div>
                 <div class="form-info">
                     <div class="form-details">
                         <label for="first-name" class="first-name-form">Phone Number</label>
                         <br>
-                        <input type="text" placeholder="+1 (555) 123 4567" class="form-input" style="width: 762.66px;">
+                        <input type="text" formControlName="phone" placeholder="+1 (555) 123 4567" class="form-input" style="width: 762.66px;">
                     </div>
                 </div>
             </form>
