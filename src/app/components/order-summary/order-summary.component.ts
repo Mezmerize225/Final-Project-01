@@ -1,4 +1,4 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { CartService } from '../../services/cart.service';
 import { CurrencyPipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -13,4 +13,5 @@ export class OrderSummaryComponent {
   public cartService = inject(CartService);
 
   @Input() mode: 'full' | 'compact' = 'full';
+  @Output() placeOrder = new EventEmitter<void>();
 }

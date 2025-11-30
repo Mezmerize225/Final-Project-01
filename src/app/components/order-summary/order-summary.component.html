@@ -110,7 +110,7 @@
     </div>
     <div>
         <div class="checkout-container-02">
-            <button class="checkout-btn horizontal-align" routerLink="/checkout">
+            <button class="checkout-btn horizontal-align" (click)="placeOrder.emit()">
                 <img src="../../../assets/images/order-icon.svg" alt="order-icon" style="width: 14px; height: 16px;">
                 <p>Place Order</p>
             </button>

@@ -98,4 +98,14 @@ export class CartService {
     }, 0);
   }
 
+  public getItems(): ICartItem[] {
+    return this.cartItems();
+  }
+
+  public clearCart(): void { 
+    this.cartItems.set([]);
+  }
+
+
+
 }
