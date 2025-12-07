@@ -71,7 +71,7 @@
                                 Add to Cart
                             </button>    
                         </div>
-                        <button class="buy-btn" routerLink="/checkout">Buy Now</button>
+                        <button class="buy-btn" (click)="cartService.addCartItem(product)" routerLink="/checkout">Buy Now</button>
                     </div>
                     <div style="margin-top: 183px; border-top: 1px solid #b7b8b9;">
                         <p style="font-size: 16px; font-weight: 600;">Key Features</p>

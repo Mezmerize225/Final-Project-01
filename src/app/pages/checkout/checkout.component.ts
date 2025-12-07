@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 export class CheckoutComponent {
   public cartService = inject(CartService);
 
-  public states: string[] = ['Select State', 'Washington', 'New York', 'Texas'];
+  public states: string[] = ['Washington', 'New York', 'Texas'];
   public stateOption = this.states;
   // public stateCategory = new FormControl('');
 
@@ -27,11 +27,12 @@ export class CheckoutComponent {
       city: ['', Validators.required],
       state: ['', Validators.required], // default is empty string
       zip: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
+      // email: ['', [Validators.required, Validators.email]],
       phone: ['']
     });
   }
     async onPlaceOrder() {
+      if(this.checkoutForm.valid) {
         const order = {
           ...this.checkoutForm.value,
           cart: this.cartService.cartItems()
@@ -62,6 +63,8 @@ export class CheckoutComponent {
           alert('Order placed successfully!');
         } catch (e) {
           alert('Failed to place order.');
+        }} else {
+          alert('Please fill all required fields correctly.');
         }
   }
 }

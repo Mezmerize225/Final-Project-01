@@ -78,6 +78,11 @@ export class CartService {
     return Number(sum.toFixed(2));
   }
 
+  public taxPrice() {
+    let tax = this.subtotalPrice() * 0.08;
+    return Number(tax.toFixed(2));
+  }
+
   public totalDiscount() {
     return this.cartItems().reduce((sum, item) => { 
       if(!item.newPrice) { 
@@ -95,7 +100,7 @@ export class CartService {
       } else {
         return sum + (item.newPrice * item.quantity);
       }
-    }, 0);
+    }, this.taxPrice() );
   }
 
   public getItems(): ICartItem[] {

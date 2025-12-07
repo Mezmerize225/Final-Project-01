@@ -14,7 +14,7 @@
         </div>
         <div class="inner-02 inner-02-text">
             <span>Tax</span>
-            <span>$23.20</span>
+            <span>{{ cartService.taxPrice() | currency: 'USD'}}</span>
         </div>
         <div class="inner-02 discount-text">
             <span>Discount</span>
@@ -99,7 +99,7 @@
         </div>
         <div class="inner-05 inner-05-text">
             <span>Tax</span>
-            <span>$23.20</span>
+            <span>{{ cartService.taxPrice() | currency: 'USD'}}</span>
         </div>
         <div class="inner-04">
             <div class="total-prc">

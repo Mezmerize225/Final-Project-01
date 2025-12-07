@@ -23,31 +23,31 @@
                     <div class="form-details">
                         <label for="first-name" class="first-name-form">First Name</label>
                         <br>
-                        <input type="text" formControlName="firstName" placeholder="Sarah" class="form-input">
+                        <input type="text" id="first-name" formControlName="firstName" placeholder="Sarah" class="form-input">
                     </div>
                     <div class="form-details">
-                        <label for="first-name" class="first-name-form">Last Name</label>
+                        <label for="last-name" class="first-name-form">Last Name</label>
                         <br>
-                        <input type="text" formControlName="lastName" placeholder="Johnson" class="form-input">
+                        <input type="text" id="last-name" formControlName="lastName" placeholder="Johnson" class="form-input">
                     </div>
                 </div>
                 <div class="form-info">
                     <div class="form-details">
-                        <label for="first-name" class="first-name-form">Street Address</label>
+                        <label for="street-address" class="first-name-form">Street Address</label>
                         <br>
-                        <input type="text" formControlName="streetAddress" placeholder="123 Main Street" class="form-input" style="width: 762.66px;">
+                        <input type="text" id="street-address" formControlName="streetAddress" placeholder="123 Main Street" class="form-input" style="width: 762.66px;">
                     </div>
                 </div>
                 <div class="form-info">
                     <div class="form-details address-info">
-                        <label for="first-name" class="first-name-form">City</label>
+                        <label for="city-name" class="first-name-form">City</label>
                         <br>
-                        <input type="text" formControlName="city" placeholder="New York" class="form-input" style="width: 243.55px;">
+                        <input type="text" id="city-name" formControlName="city" placeholder="New York" class="form-input" style="width: 243.55px;">
                     </div>
                     <div class="form-details address-info">
-                        <label for="first-name" class="first-name-form">State</label>
+                        <label for="state-name" class="first-name-form">State</label>
                         <br>
-                        <select formControlName="state" class="form-input first-name" style="width: 243.55px;">
+                        <select formControlName="state" id="state-name" class="form-input first-name" style="width: 243.55px;">
                             <option value="" disabled selected>Select State</option>
                             @for(stateOptions of stateOption; track stateOptions) {
                                 <option type="text" placeholder="Select State" [value]="stateOptions" >
@@ -57,16 +57,16 @@
                         </select>
                     </div>
                     <div class="form-details address-info">
-                        <label for="first-name" class="first-name-form">ZIP Code</label>
+                        <label for="zip-code" class="first-name-form">ZIP Code</label>
                         <br>
-                        <input type="text" formControlName="zip" placeholder="10001" class="form-input" style="width: 243.55px;">
+                        <input type="text" id="zip-code" formControlName="zip" placeholder="10001" class="form-input" style="width: 243.55px;">
                     </div>
                 </div>
                 <div class="form-info">
                     <div class="form-details">
-                        <label for="first-name" class="first-name-form">Phone Number</label>
+                        <label for="phone" class="first-name-form">Phone Number</label>
                         <br>
-                        <input type="text" formControlName="phone" placeholder="+1 (555) 123 4567" class="form-input" style="width: 762.66px;">
+                        <input type="text" formControlName="phone" id="phone" placeholder="+1 (555) 123 4567" class="form-input" style="width: 762.66px;">
                     </div>
                 </div>
             </form>
