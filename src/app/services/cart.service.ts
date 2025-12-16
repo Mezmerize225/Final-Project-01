@@ -39,8 +39,8 @@ export class CartService {
             return {...item, quantity: item.quantity + 1}
           } return item;
         })
-      })
-
+      }
+    )
   }
 
   public decreaseAmount(productID: string) {
@@ -56,8 +56,8 @@ export class CartService {
             }
           } return item;
         }).filter(Boolean);
-      })
-
+      }
+    )
   }
 
   public removeItem(productID: string) {
@@ -110,7 +110,4 @@ export class CartService {
   public clearCart(): void { 
     this.cartItems.set([]);
   }
-
-
-
 }

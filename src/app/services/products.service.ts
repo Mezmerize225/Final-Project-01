@@ -3,7 +3,6 @@ import { inject, Injectable } from '@angular/core';
 import { debounceTime, map, Observable, startWith, switchMap} from 'rxjs';
 import { IProduct } from '../models/product.model';
 import { FormControl } from '@angular/forms';
-import { products } from '../../../db.json';
 
 @Injectable({
   providedIn: 'root'
@@ -25,76 +24,21 @@ export class ProductsService {
 
   private searchControl = new FormControl('');
   private products$ = this.getProducts();
-  // allProducts: IProduct[] = products as any;
-  // filteredProducts: IProduct[] = [];
 
   public getSearchControl() {
     return this.searchControl;
   }
 
-    public filteredProducts$ = this.searchControl.valueChanges.pipe(
-      startWith(this.searchControl.value),
-      debounceTime(300),
-      switchMap((searchText) => {
-        const text = (searchText || '').toLowerCase();
-        return this.getProducts().pipe(
-        map((products) =>
-          products.filter((p) =>
-          p.title.toLowerCase().includes(text))
-        )
-        )
-      })
-    );
-      
-    
-  
-  
-
-
-
-
-
-
-  // public functionthis() {
-  //   this.filteredProducts = this.allProducts;
-
-    
-  //   this.searchControl.valueChanges.pipe(debounceTime(300)).subscribe((searchText) => {
-  //     const text = (searchText || '').toLowerCase();
-  //     this.filteredProducts = this.allProducts.filter((p) =>
-  //       p.title.toLowerCase().includes(text)
-  //     );
-  //   });
-  // }
-
-
-  // public searchCriteria$ = this.searchControl.valueChanges.pipe(
-  //   startWith(this.searchControl.value),
-  //   debounceTime(300),
-  //   distinctUntilChanged()
-  // )
-
-  // public filteredProducts$ = this.searchCriteria$.pipe(
-  //   ( searchCriteria$ ) => this.getProducts().pipe(
-  //     map((products: IProduct[]) => {
-  //       let filteredProducts = products;
-        
-  //       if(searchCriteria$) {
-  //         filteredProducts = filteredProducts.filter((item: IProduct) => item.title.toLowerCase().includes(searchCriteria$.toLowerCase()))
-  //       }
-  //       return filteredProducts;
-  //     })
-  //   )
-  // )
-
-  
-
-  // public setProducts() {
-
-  // }
-
-  // public getProducts(): Observable<IProduct[]> {
-  //   return of(this.products)
-  // }
-
+  public filteredProducts$ = this.searchControl.valueChanges.pipe(
+    startWith(this.searchControl.value),
+    debounceTime(300),
+    switchMap((searchText) => {
+      const text = (searchText || '').toLowerCase();
+      return this.getProducts().pipe(
+      map((products) =>
+        products.filter((p) =>
+        p.title.toLowerCase().includes(text))
+      ))
+    })
+  );
 }
